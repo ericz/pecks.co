@@ -1,0 +1,59 @@
+button, .btn, a.btn:visited
+  margin: 0
+  height: 36x
+  line-height: 36px
+  text-align: center
+  padding: 0 24px
+  border-radius: 3px
+  border: 0
+  color: lightTheme
+  font-weight: 400
+  font-family: fontPrimary
+  font-size: 17px
+  background-color: #666
+  display: inline-block
+  vertical-align: baseline
+  outline: 0
+  cursor: pointer
+  user-select: none;
+  &:hover, &:active
+    background-color: #999
+    color: lightTheme
+  &.brown
+    background-color: darkBrown
+    &:hover, &:active
+      background-color: paleBrown
+
+  &.green
+    background-color: mediumGreen
+    &:hover, &:active
+      background-color: lightGreen
+
+  &.fb
+    background-color: #5F78AB
+    &:hover, &:active
+      background-color: #7B90B9
+
+  &.disabled, &.small.disabled
+    cursor: default
+    background-color: lightGray
+
+  i
+    &.before
+      margin-left: -12px
+      margin-right: 3px
+    &.after
+      margin-right: -12px
+      margin-left: 3px
+
+.btn.small
+  height: 30px
+  line-height: 30px
+  font-size: 14px
+  padding: 0 12px
+  text-transform: uppercase
+  background-color: lightBrown
+  color: lightTheme
+
+* + button, * + .btn
+  margin-left: 12px

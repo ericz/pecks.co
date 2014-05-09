@@ -1,0 +1,119 @@
+form
+  max-width: 520px
+
+input[type=text], input[type=email], input[type=tel], input[type=number], input[type=password], textarea, select
+  font-family: fontPrimary
+  border: 2px solid lightBrown
+  background-color: lightTheme
+  border-radius: 3px
+  outline: 0
+  padding: 0 0.4em
+  line-height: 1.5em
+  height: 38px
+  font-size: 17px
+  color: darkBrown
+  &:focus
+    border-color: darkBrown
+    background-color: white
+  &.ng-invalid
+    border-color: lightMagenta
+
+input[type=radio], input[type=checkbox]
+  display: none
+
+select
+  width: 100%
+  line-height: 1em
+  padding: 4px
+
+label
+  display: inline-block
+  cursor: pointer
+  position: relative
+  margin-right: 18px
+
+  &::before
+    content: ""
+    display: inline-block
+    background-color: lightTheme
+    width: 18px
+    height: 18px
+    border: 2px solid lightBrown
+    margin-right: 3px
+    vertical-align: text-bottom
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+    position: relative
+  &.radio::before
+    border-radius: 9px
+  &.checkbox::before
+    border-radius: 3px
+
+input[type=radio]:checked + label::before
+  box-shadow: inset 0 0 0 3px lightTheme
+  border-color: darkBrown
+  background-color: darkBrown
+
+
+input[type=checkbox]:checked + label::before
+  content: "\2713"
+  color: darkBrown
+  text-align: center
+  line-height: 14px
+  font-size: 15px
+  font-weight: bolder
+  border-color: darkBrown
+
+::-webkit-input-placeholder
+  color: #d4c7c3
+:-moz-placeholder
+  color: #d4c7c3
+::-moz-placeholder
+  color: #d4c7c3
+:-ms-input-placeholder
+  color: #d4c7c3
+
+ul.form
+  list-style: none
+  li
+    margin: 1.5em 0
+    &.bottom-space
+      margin-bottom: 2.5em
+    .form-label
+      display: inline-block
+      width: 30%
+      vertical-align: middle
+      font-size: 17px
+      @media mobile
+        display: block
+        width: 100%
+    .form-field
+      width: 70%
+      margin-left: -4px
+      display: inline-block
+      vertical-align: middle
+      input
+        width: 100%
+      @media mobile
+        display: block
+        width: 100%
+        margin-left: 0
+
+    .form-row
+        width: 100%
+
+    .form-action
+      margin-top: 4em
+      text-align: right
+      @media mobile
+        text-align: center
+
+    /* Hack to make inline state and zip look right */
+    &.multicolumn
+      .unit, .lastUnit
+        @media mobile
+          padding: 0
+      .lastUnit
+        @media mobile
+          margin-top: 1.5em

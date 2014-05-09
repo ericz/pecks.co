@@ -1,0 +1,22 @@
+{
+  "name": "pecks.co",
+  "description": "",
+  "author": "",
+  "version": "0.0.1",
+  "repository": "",
+  "scripts": {
+    "start": "nodemon server.coffee"
+  },
+  "dependencies": {
+    "javascript-brunch": ">= 1.0 < 1.8",
+    "css-brunch": ">= 1.0 < 1.8",
+    "uglify-js-brunch": ">= 1.0 < 1.8",
+    "clean-css-brunch": ">= 1.0 < 1.8",
+    "stylus-brunch": "~1.7.0",
+    "express": "~3.4.4",
+    "coffee-script-brunch": "~1.7.3",
+    "stripe": "",
+    "mailgun": "~0.4.2",
+    "mongoskin": "~0.6.0"
+  }
+}

@@ -1,4 +1,3 @@
-pecks.co
-========
+# Pecks.co
 
-The pecks.co website
+The website for Pecks jerky
