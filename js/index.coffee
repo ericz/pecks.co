@@ -7,4 +7,4 @@ require('./directives')
 # Controllers - frontend logic usually used on one pgae
 require('./controllers')
 
-app = angular.module('Pecks', ['Pecks-resources', 'Pecks-directives', 'Pecks-controllers', 'angularPayments'])
+app = angular.module('Pecks', ['Pecks-services', 'Pecks-directives', 'Pecks-controllers', 'angularPayments'])

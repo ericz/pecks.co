@@ -5,5 +5,5 @@
 #
 
 
-app = angular.module('Pecks-directives', ['Pecks-resources'])
+app = angular.module('Pecks-directives', ['Pecks-services'])
 
